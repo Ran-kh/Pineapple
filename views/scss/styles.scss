@@ -1,0 +1,258 @@
+///////
+@import 'base';
+@import 'font';
+///////
+
+
+///////////////////////////////// ---navbar --- ////////////////////////////////////////
+
+//-- pineapple logo div
+#logodiv {
+
+  img {
+    width:25px;
+    cursor: pointer;
+  }
+
+  label {
+    display: none;
+  }
+}
+
+#navbar {
+
+  display: flex;
+  padding: 1.2vh 5vw 1.5vh;
+
+  nav {
+    margin: 1.8vh 0 0;
+    flex: 1;
+    text-align: right;
+
+    ul li {
+      list-style: none;
+      display: inline;
+      margin-left: 5vw;
+      //margin between the nav index
+
+      a {
+        text-decoration: none;
+        color: #6A707B;
+      }
+    }
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+#background-image {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-image: url('../images/image_summer.png');
+  background-repeat: no-repeat;
+  background-position: 60% 100%;
+  z-index: 0;
+
+  img {
+    display: none
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+#form {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  width: 90%;
+  margin: 23vh 1vw 0 5vw;
+  background-color: white;
+
+  h1 {
+    font-size: 24px;
+    font-family: Georgia;
+    font-weight: 400;
+    margin: 4.5vh 5.5vw 1.5vh;
+  }
+
+  p{
+    color: #6A707B;
+    margin: 0 5.5vw 0.5vh;
+    line-height: 26px;
+  }
+
+////////////////////////////////////////////////////////
+
+  #emailValMsg , #checkboxValMsg{
+    color: red;
+    margin-left: 1vw;
+  }
+
+/////////////////////////////////////////////////////////
+
+  #emailsub{
+    margin: 0 5.7vw 2.5vh;
+    position: relative;
+    border: 1px solid #E3E3E4;
+    border-left: 4px solid #4066A5;
+
+    &:hover{
+      border: 1px solid #4066A5;
+      border-left: 4px solid #4066A5;
+      box-shadow: 0px 20px 25px #E3E3E4;
+
+      button[type=submit]{
+        color:#4066A5;
+      }
+    }
+
+    input[type=email]
+    {
+      outline:none;
+      width: 100%;
+      padding: 2.7vh 0;
+      margin-right: 0;
+      border: 0;
+
+      &::placeholder{
+        font-size: 16px;
+        padding-left: 4.5vw;
+      }
+
+      &:focus{
+        outline: none;
+        box-shadow: 0px 20px 25px #E3E3E4;
+      }
+    }
+
+    button[type=submit]{
+      width:10%;
+      position: absolute;
+      top: 1px;
+      bottom: 1px;
+      right: 1px;
+      letter-spacing: 1.2px;
+      margin-left: 0;
+      border:0;
+      color: #E3E3E4;
+      background: white;
+      text-align: left;
+    }
+  }
+
+/////////////////////////////////////////////////////////////
+
+
+  #checkbox {
+    margin-left: 5vw;
+
+////////////////////////////////
+
+    input[type=checkbox] {
+      appearance:none;
+      border: 1px solid #E3E3E4;
+      border-radius: 3px;
+      margin-top: 0;
+      width: 26px;
+      height: 26px;
+      vertical-align: middle;
+      display: inline-block;
+      position: relative;
+
+      &:hover{
+        cursor:pointer;
+      }
+
+      &:checked{
+        background-color: #4066A5;
+      }
+
+      &:checked:after {
+        content: '\2714';
+        margin: 0 auto;
+        font-size: 16px;
+        color: white;
+        position: absolute;
+        top: 0px;
+        left: 5px;
+      }
+    }
+////////////////////////////////
+
+    label[for=checkbox] {
+      margin-left: 3.5vw;
+      font-size: 16px;
+      color: #6A707B;
+      a{
+        color: black;
+        font-size: 16px;
+      }
+    }
+  }
+/////////////////////////////////////////////////////////////
+
+  hr {
+    border-top: 0.1px solid #E3E3E4;
+    margin: 2vh 2.5vw;
+  }
+
+///////////////////////////////////////////////////////////////////
+
+  #social {
+
+    text-align: center;
+    margin: 1vh auto 4vh;
+
+    ul{
+      display: flex;
+
+      li{
+        margin-right: 3.7vw;
+        list-style: none;
+      }
+    }
+  }
+
+
+
+}
+
+////////////////////////////////////////////////////////////
+
+
+@import 'media-queries';
+
+
+/////////////////////////////////////// ----- Records.php ---- ///////////////////////////////////////////////////
+
+#RecTable {
+
+  border-collapse: collapse;
+  width: 100%;
+  margin: 100px auto;
+
+  td, th {
+    border:1px solid gray;
+    text-align: center;
+    padding: 1vw 0.5vw;
+
+    button{
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  th{
+    padding: 0vw 0vw;
+  }
+}
+
+#tablerec{
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}

@@ -1,0 +1,151 @@
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+
+  #container{
+    display:flex;
+  }
+
+
+  #logodiv{
+    display: flex;
+    label {
+      font-size: 17px;
+      text-align: right;
+      display: inline;
+      margin: 1.8vh 0px 0px 1vw;
+    }
+  }
+
+  //////////////////////////////////////////////////////
+  #left-div{
+    width: 35.405vw;
+    height: 90vh;
+
+    #navbar{
+      margin : 7.9vh 0vw 0vh;
+      background-color: transparent;
+
+      nav{
+        margin-top: 2vh;
+
+        ul li{
+          margin-left: 1.5vw;
+
+          a{
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    #form {
+
+      position: static;
+      max-width: 80%;
+      background-color: transparent;
+      margin-top: 16.2vh;
+
+      h1 {
+        font-size: 32px;
+        margin-left: 2.3vw;
+      }
+
+      p {
+        font-size: 16px;
+        margin-left: 2.3vw;
+        margin-top: 0.4vh;
+        line-height: 28px;
+      }
+
+      #emailsub{
+        margin-top: 2.5vh;
+        margin-left: 0.2vw;
+        width:34.3vw;
+        z-index: 2;
+
+        input[type="email"]{
+          padding: 2.4vh 0;
+
+          &::placeholder{
+            padding-left: 2.1vw;
+          }
+        }
+
+        button {
+          float: left;
+        }
+      }
+
+      #checkbox {
+        margin-top: 5vh;
+        margin-left: 2.3vw;
+
+        label[for=checkbox] {
+          margin-left: 0.5vw;
+        }
+      }
+
+      hr {
+        margin: 4.4vh 2.4vw 0;
+      }
+
+      #social {
+        width: 90%;
+        margin-left: 6.5vw;
+        margin-top: 5vh;
+
+        ul li {
+          margin-right: 1vw;
+        }
+      }
+
+    }
+
+    .fab{
+      padding: 1.5vh 0.5vw;
+    }
+  }
+
+  //////////////////////////////////////////////////////////////////////
+
+  #background-image {
+    position: static;
+    display: grid;
+    width: 65%;
+    height: 100%;
+    background-image: none;
+
+    img {
+      display: block;
+      margin: auto;
+      width: 65vw;
+      height: 100vh;
+    }
+  }
+
+  @media only screen and (max-width: 1640px){
+
+    #navbar{
+      margin-bottom: 20px;
+    }
+
+
+    #logodiv label {
+      font-size: 15px;
+    }
+    #navbar nav ul li a{
+      font-size: 14px;
+    }
+
+    #form {
+      h1 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
